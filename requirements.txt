@@ -1,0 +1,12 @@
+# Versões testadas no ambiente do artigo (Python 3.12, CUDA 13)
+torch==2.13.0
+torch_geometric==2.8.0
+numpy==2.5.1
+pandas==3.0.3
+matplotlib==3.11.0
+networkx==3.6.1
+plotly==6.9.0
+streamlit==1.59.1
+scipy==1.18.0
+pykrige==1.7.3
+jupyter

@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="label" attr.type="string" for="node" id="label"/>
+    <key attr.name="Edge Label" attr.type="string" for="edge" id="edgelabel"/>
+    <key attr.name="weight" attr.type="double" for="edge" id="weight"/>
+    <key attr.name="r" attr.type="int" for="node" id="r"/>
+    <key attr.name="g" attr.type="int" for="node" id="g"/>
+    <key attr.name="b" attr.type="int" for="node" id="b"/>
+    <key attr.name="x" attr.type="float" for="node" id="x"/>
+    <key attr.name="y" attr.type="float" for="node" id="y"/>
+    <key attr.name="size" attr.type="float" for="node" id="size"/>
+    <graph edgedefault="undirected">
+        <node id="0">
+            <data key="label">Santana do Parnaiba</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-323.2283</data>
+            <data key="y">188.71158</data>
+        </node>
+        <node id="1">
+            <data key="label">Pirituba</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-158.30354</data>
+            <data key="y">172.8282</data>
+        </node>
+        <node id="2">
+            <data key="label">Freguesia do Ó  </data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-90.3207</data>
+            <data key="y">168.86894</data>
+        </node>
+        <node id="3">
+            <data key="label">Santana / Tucuruvi</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-36.97921</data>
+            <data key="y">99.72976</data>
+        </node>
+        <node id="4">
+            <data key="label">Vila Maria / Guilherme</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">121.49712</data>
+            <data key="y">174.66478</data>
+        </node>
+        <node id="5">
+            <data key="label">Penha</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">145.22615</data>
+            <data key="y">131.57277</data>
+        </node>
+        <node id="6">
+            <data key="label">S. Miguel Paulista</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">220.87271</data>
+            <data key="y">131.79425</data>
+        </node>
+        <node id="7">
+            <data key="label">Itaim Paulista</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">264.16284</data>
+            <data key="y">92.50761</data>
+        </node>
+        <node id="8">
+            <data key="label">Itaquera</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">231.77351</data>
+            <data key="y">42.468994</data>
+        </node>
+        <node id="9">
+            <data key="label">São Mateus</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">225.72481</data>
+            <data key="y">-21.503271</data>
+        </node>
+        <node id="10">
+            <data key="label">Mauá - Paço Municipal</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">222.03746</data>
+            <data key="y">-106.40447</data>
+        </node>
+        <node id="11">
+            <data key="label">Riacho Grande</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">76.38431</data>
+            <data key="y">-187.59077</data>
+        </node>
+        <node id="12">
+            <data key="label">Marsilac - Palheiros</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-51.259594</data>
+            <data key="y">-401.30463</data>
+        </node>
+        <node id="13">
+            <data key="label">Capela do Socorro</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-41.39791</data>
+            <data key="y">-266.18158</data>
+        </node>
+        <node id="14">
+            <data key="label">Capela do Socorro - Subprefeitura</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-92.57797</data>
+            <data key="y">-191.17699</data>
+        </node>
+        <node id="15">
+            <data key="label">M Boi Mirim</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-90.61595</data>
+            <data key="y">-109.98879</data>
+        </node>
+        <node id="16">
+            <data key="label">Campo Limpo</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-173.49716</data>
+            <data key="y">-155.85382</data>
+        </node>
+        <node id="17">
+            <data key="label">Lapa</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-168.34062</data>
+            <data key="y">122.706764</data>
+        </node>
+        <node id="18">
+            <data key="label">Pinheiros</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-133.7358</data>
+            <data key="y">61.030956</data>
+        </node>
+        <node id="19">
+            <data key="label">Sé - CGE</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-29.053926</data>
+            <data key="y">38.786182</data>
+        </node>
+        <node id="20">
+            <data key="label">Móoca    </data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">60.782467</data>
+            <data key="y">19.356493</data>
+        </node>
+        <node id="21">
+            <data key="label">Vila Formosa</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">158.72995</data>
+            <data key="y">23.225489</data>
+        </node>
+        <node id="22">
+            <data key="label">Vila Prudente</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">109.81487</data>
+            <data key="y">-7.6980853</data>
+        </node>
+        <node id="23">
+            <data key="label">Vila Mariana</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-17.813023</data>
+            <data key="y">-32.621765</data>
+        </node>
+        <node id="24">
+            <data key="label">Ipiranga</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">76.945595</data>
+            <data key="y">-82.51782</data>
+        </node>
+        <node id="25">
+            <data key="label">Jabaquara</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-14.592339</data>
+            <data key="y">-105.763306</data>
+        </node>
+        <node id="27">
+            <data key="label">Perus</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-225.98778</data>
+            <data key="y">210.82944</data>
+        </node>
+        <node id="28">
+            <data key="label">Barragem Palheiros</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-48.232777</data>
+            <data key="y">-325.5793</data>
+        </node>
+        <node id="29">
+            <data key="label">Cidade Ademar</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">28.650877</data>
+            <data key="y">-142.52971</data>
+        </node>
+        <node id="30">
+            <data key="label">Butantã</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-213.60677</data>
+            <data key="y">53.238674</data>
+        </node>
+        <node id="31">
+            <data key="label">Santo Amaro</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">-47.460033</data>
+            <data key="y">-87.34986</data>
+        </node>
+        <node id="32">
+            <data key="label">Tremembé </data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">11.680391</data>
+            <data key="y">275.2798</data>
+        </node>
+        <node id="33">
+            <data key="label">IAG-USP</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">31.546131</data>
+            <data key="y">-98.035645</data>
+        </node>
+        <node id="34">
+            <data key="label">INMET - Interlagos</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">6.0598125</data>
+            <data key="y">-167.47462</data>
+        </node>
+        <node id="35">
+            <data key="label">INMET - Convencional (Mirante de Santana)</data>
+            <data key="size">4.0</data>
+            <data key="r">0</data>
+            <data key="g">0</data>
+            <data key="b">0</data>
+            <data key="x">5.013013</data>
+            <data key="y">198.69334</data>
+        </node>
+        <edge id="2" source="0" target="1">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="3" source="1" target="2">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="4" source="2" target="3">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="5" source="3" target="4">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="6" source="4" target="5">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="7" source="5" target="6">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="8" source="6" target="7">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="9" source="7" target="8">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="10" source="8" target="9">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="11" source="9" target="10">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="12" source="10" target="11">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="13" source="11" target="12">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="14" source="11" target="13">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="15" source="11" target="14">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="65" source="29" target="11">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="17" source="11" target="24">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="66" source="29" target="25">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="19" source="14" target="13">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="20" source="14" target="16">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="69" source="15" target="14">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="22" source="14" target="25">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="23" source="24" target="25">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="24" source="17" target="2">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="25" source="17" target="1">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="26" source="15" target="18">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="27" source="15" target="23">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="28" source="15" target="25">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="29" source="19" target="18">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="30" source="19" target="20">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="31" source="17" target="18">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="32" source="2" target="18">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="33" source="3" target="18">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="70" source="30" target="17">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="35" source="16" target="15">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="36" source="23" target="19">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="37" source="3" target="19">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="38" source="4" target="19">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="39" source="18" target="23">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="40" source="25" target="23">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="41" source="24" target="23">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="42" source="24" target="22">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="43" source="21" target="22">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="44" source="20" target="21">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="45" source="19" target="22">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="46" source="20" target="22">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="47" source="20" target="23">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="48" source="20" target="24">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="49" source="20" target="4">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="50" source="20" target="5">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="51" source="8" target="21">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="52" source="5" target="8">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="53" source="5" target="21">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="54" source="9" target="21">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="55" source="9" target="22">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="56" source="24" target="10">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="57" source="22" target="10">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="58" source="9" target="24">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="59" source="17" target="16">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="60" source="17" target="0">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="61" source="27" target="1">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="62" source="27" target="0">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="63" source="28" target="13">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="64" source="28" target="12">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="67" source="29" target="24">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="68" source="29" target="14">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="71" source="30" target="18">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="72" source="30" target="16">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="73" source="31" target="15">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="74" source="31" target="25">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="75" source="31" target="23">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="76" source="32" target="2">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="77" source="32" target="3">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="78" source="32" target="4">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="99" source="33" target="23">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="98" source="33" target="25">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="97" source="33" target="29">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="96" source="33" target="24">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="104" source="35" target="32">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="103" source="34" target="11">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="102" source="34" target="14">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="101" source="34" target="29">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="100" source="34" target="25">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="94" source="35" target="2">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="95" source="35" target="3">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="93" source="35" target="4">
+            <data key="weight">1.0</data>
+        </edge>
+    </graph>
+</graphml>
