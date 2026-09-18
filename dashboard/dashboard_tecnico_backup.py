@@ -19,7 +19,9 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 
-ARTIFACTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "artifacts")
+# artifacts/ fica na raiz do repositorio, um nivel acima desta pasta
+ARTIFACTS_DIR = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "artifacts")
 
 st.set_page_config(page_title="Monitoramento Climático GNN", layout="wide")
 

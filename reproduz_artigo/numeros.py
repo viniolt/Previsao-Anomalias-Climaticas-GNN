@@ -1,7 +1,8 @@
-import pickle, numpy as np, pandas as pd
+import os, pickle, numpy as np, pandas as pd
+from caminhos import ARTIFACTS
 
-d = pickle.load(open('codigo/artifacts/X_test.pkl', 'rb'))
-g = pickle.load(open('codigo/artifacts/graph_data.pkl', 'rb'))
+d = pickle.load(open(os.path.join(ARTIFACTS, 'X_test.pkl'), 'rb'))
+g = pickle.load(open(os.path.join(ARTIFACTS, 'graph_data.pkl'), 'rb'))
 lab = g['labels']; nl = g['nodes_lista']
 blind = [nl.index(b) for b in g['blind_nodes']]
 obs = [i for i in range(35) if i not in blind]

@@ -7,11 +7,8 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
 import os
-_HERE = os.path.dirname(os.path.abspath(__file__))
-_PAI = os.path.dirname(_HERE)                       # repo: raiz | local: codigo/
-ART = os.path.join(_PAI, "artifacts")
-BASE = _PAI if os.path.isdir(os.path.join(_PAI, "artigo")) else os.path.dirname(_PAI)
-OUT = os.path.join(BASE, "artigo", "figs")
+from caminhos import ARTIFACTS as ART, FIGS as OUT
+os.makedirs(OUT, exist_ok=True)
 
 d = pickle.load(open(os.path.join(ART, "X_test.pkl"), "rb"))
 g = pickle.load(open(os.path.join(ART, "graph_data.pkl"), "rb"))

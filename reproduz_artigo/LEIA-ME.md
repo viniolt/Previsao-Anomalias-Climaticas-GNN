@@ -1,7 +1,36 @@
 # Scripts que reproduzem os números e as figuras do artigo
 
-Rodar a partir de `paper_essenciais/` com `.venv/bin/python codigo/reproduz_artigo/<script>`.
-Todos leem `codigo/artifacts/X_test.pkl` + `graph_data.pkl`, gerados pelo notebook.
+Rodar **a partir da raiz do repositório**:
+
+```bash
+python reproduz_artigo/<script>.py
+```
+
+Todos leem `artifacts/X_test.pkl` + `artifacts/graph_data.pkl`, gerados pelo
+notebook. Os caminhos vêm de `caminhos.py`, que resolve a raiz a partir da
+posição do próprio script: mover esta pasta de lugar quebra tudo, mover as
+outras pastas não.
+
+> ### ⚠ O `artifacts/X_test.pkl` atual NÃO é o que gerou os números publicados
+>
+> O pickle no repositório foi **regenerado** por `regen_x_test.py` (agosto de
+> 2026) porque o original não estava versionado. Ele bate com o artigo em
+> várias coisas (registros brutos de 2024, frações de dados ausentes, FP do nó
+> 33, correlação de temperatura), mas **diverge** em outras: 80 dias de evento
+> em vez de 97, persistência PLU 0,286 em vez de 0,359, precisão p99 21,9% em
+> vez de 26,6%. A causa provável é dependência de versão do pandas no
+> `interpolate`/`resample` do pré-processamento.
+>
+> Consequências práticas:
+>
+> - **Não rode `fig_mapa.py` nem `fig_evento.py`.** As figuras em
+>   `relatorio-it/figs/` são as originais (14/08) e sobrescrevê-las produziria
+>   imagens que contradizem o texto do relatório.
+> - `fig_grafo.py` é seguro: depende só de `graph_data.pkl`, que é versionado.
+> - Os números impressos por `numeros.py`, `regime.py`, `por_estacao.py` e
+>   `deteccao_*.py` serão os regenerados, não os publicados.
+> - Recuperar o original exige rodar o notebook inteiro na máquina de origem,
+>   com os CSVs de 2016–2022, que não estão neste repositório.
 
 | script | o que faz |
 |---|---|

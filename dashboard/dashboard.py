@@ -18,7 +18,9 @@ import pandas as pd
 import streamlit as st
 import plotly.graph_objects as go
 
-ARTIFACTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "artifacts")
+# artifacts/ fica na raiz do repositorio, um nivel acima desta pasta
+ARTIFACTS_DIR = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "artifacts")
 H = 6  # horizonte: 6 passos de 10 min = 1 hora
 
 st.set_page_config(page_title="Clima em São Paulo", layout="wide")

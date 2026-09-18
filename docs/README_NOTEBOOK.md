@@ -36,8 +36,8 @@ A versão 0.8.0 introduz três melhorias em relação à 0.7.5:
 **Ambiente recomendado:** `/home/viniz0r/Documentos/IT_novo/.venv`
 
 **Dados necessários:**
-- `estações_meteorológicas/meteorologicas_2023/` — CSVs das estações CGE (treino)
-- `estações_meteorológicas/meteorologicas_2024/` — CSVs das estações CGE (teste)
+- `estacoes_meteorologicas/meteorologicas_2023/` — CSVs das estações CGE (treino)
+- `estacoes_meteorologicas/meteorologicas_2024/` — CSVs das estações CGE (teste)
 - `001.graphml` — arquivo de grafo com arestas, pesos e coordenadas geográficas
 
 Após rodar o notebook por completo, a pasta `artifacts/` é criada com os artefatos necessários para o dashboard.

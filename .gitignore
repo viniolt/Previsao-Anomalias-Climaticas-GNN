@@ -101,11 +101,19 @@ artifacts/*
 !artifacts/model_plu.pt
 !artifacts/model_temp.pt
 
-# LaTeX build
-artigo/*.aux
-artigo/*.log
-artigo/*.out
-artigo/*.fls
-artigo/*.fdb_latexmk
-artigo/*.blg
-artigo/.auctex-auto/
+# LaTeX build (relatorio-it/ e qualquer outra pasta de LaTeX)
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.blg
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+.auctex-auto/
+
+# O pacote do Overleaf e uma copia derivada de relatorio-it/: o .zip e
+# regeravel, entao nao vai para o historico.
+relatorio-it/relatorio-final-IT-overleaf.zip

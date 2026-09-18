@@ -36,7 +36,7 @@ Arquivos esperados em `artifacts/`:
 ## Como iniciar
 
 ```bash
-/home/viniz0r/Documentos/IT_novo/.venv/bin/streamlit run dashboard.py
+/home/viniz0r/Documentos/IT_novo/.venv/bin/streamlit run dashboard/dashboard.py
 ```
 
 Acesse no navegador: **http://localhost:8501**

@@ -571,7 +571,7 @@ with torch.no_grad():
 - `criterio_janela="pico_real"` → `np.argmax(trues_no)` (o pico de chuva) — usado para PLU.
 - `criterio_janela="maior_desvio_media"` → `np.argmax(|trues − média|)` (maior desvio) — usado para Temp.
 
-Os gráficos são salvos em `graficos_2024/pluviosidade/` e `graficos_2024/temperatura/`. Funções auxiliares (`plotar_no_especifico`, `plotar_no_mes`, `plotar_nos_cegos_janeiro`, `plotar_media_todos_nos_janeiro_2024`) fazem recortes específicos — com destaque para os **nós cegos em janeiro/2024**, onde se compara a estimativa do modelo com a referência.
+Os gráficos são salvos em `figuras/series_2024/pluviosidade/` e `figuras/series_2024/temperatura/`. Funções auxiliares (`plotar_no_especifico`, `plotar_no_mes`, `plotar_nos_cegos_janeiro`, `plotar_media_todos_nos_janeiro_2024`) fazem recortes específicos — com destaque para os **nós cegos em janeiro/2024**, onde se compara a estimativa do modelo com a referência.
 
 ---
 

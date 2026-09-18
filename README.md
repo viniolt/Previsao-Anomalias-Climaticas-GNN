@@ -45,7 +45,7 @@ O grafo modela as estações como nós e as relações de proximidade geográfic
 ## Arquitetura do Sistema
 
 ```
-estações_meteorológicas/
+estacoes_meteorologicas/
   meteorologicas_2016..2022/  ──► treino
   meteorologicas_2023/        ──► validação retida
   meteorologicas_2024/        ──► teste
@@ -54,7 +54,7 @@ estações_meteorológicas/
         ▼
 grafo-0.8.0-pyg.ipynb
   ├─ Carregamento e alinhamento na grade de 10 min
-  ├─ Feature Propagation nos nós cegos (Rossi et al., ICLR 2022)
+  ├─ Feature Propagation nos nós cegos (Rossi et al., LoG 2022)
   ├─ Treino do GraphSAGE (PLU + Temp, resíduo t+6 = 60 min)
   ├─ Inferência e avaliação (2024)
   └─ Detecção de anomalias (Regra 1 + Regra 2)
@@ -63,7 +63,7 @@ grafo-0.8.0-pyg.ipynb
     artifacts/
   (modelos, tensores, limiares, métricas)
         │
-        ├──► dashboard.py  (Streamlit)
+        ├──► dashboard/dashboard.py  (Streamlit)
         └──► reproduz_artigo/  (tabelas, figuras, ablação e STGCN do artigo)
 ```
 
@@ -100,7 +100,7 @@ Ao final, a pasta `artifacts/` é criada com os 6 arquivos necessários para o d
 ### 2 — Iniciar o dashboard
 
 ```bash
-streamlit run dashboard.py
+streamlit run dashboard/dashboard.py
 ```
 
 Acesse em: **http://localhost:8501**
@@ -113,29 +113,58 @@ Acesse em: **http://localhost:8501**
 
 ```
 .
-├── grafo-0.8.0-pyg.ipynb        # Notebook principal (versão atual: val-split, t+6)
-├── grafo-0.8.0-pyg_backup_*.ipynb  # Estados anteriores da 0.8.0 (histórico)
-├── grafo-0.7.x-pyg.ipynb        # Versões anteriores (histórico experimental)
-├── dashboard.py                 # Painel Streamlit — versão simples (usuário final)
-├── dashboard_tecnico_backup.py  # Painel técnico completo (5 abas, métricas)
+├── grafo-0.8.0-pyg.ipynb        # Notebook principal (val-split, t+6). Fica na raiz
+│                                #   porque lê "artifacts/" e "003.graphml" por
+│                                #   caminho relativo à pasta de execução.
 ├── 003.graphml                  # Grafo atual (35 nós, 85 arestas; INMET corrigido)
-├── 001.graphml / 002.graphml    # Versões anteriores do grafo
-├── analise_exploratoria_0.1.ipynb
-├── artigo/                      # Artigo Latinoware 2026 (LaTeX + PDF + figuras)
-├── reproduz_artigo/             # Scripts que reproduzem tabelas, figuras,
-│                                #   ablação, validação retida e STGCN (ver LEIA-ME)
-├── diagnostico_chuva/           # Demonstração acumulado vs. incremento
-├── estações_meteorológicas/     # CSVs das estações CGE (2023 e 2024; 2016–2022 no Release)
-├── graficos_2024/               # Gráficos de pluviosidade e temperatura por nó
-│   ├── pluviosidade/
-│   └── temperatura/
-├── NÓS CEGOS/                   # Análises dos nós sem dados próprios
-├── slidesGNN/                   # Slides e documentação técnica do projeto
-├── docs/
-├── exemplos/
-└── artifacts/                   # Gerado pelo notebook; versionados apenas os
-                                 #   pequenos (modelos, grafo, limiares, JSONs)
+├── artifacts/                   # Gerado pelo notebook; versionados apenas os
+│                                #   pequenos (modelos, grafo, limiares, JSONs)
+├── estacoes_meteorologicas/     # CSVs do CGE (2023 e 2024; 2016–2022 no Release).
+│                                #   Precisa ficar na raiz: o notebook e os scripts
+│                                #   a localizam varrendo a raiz por "meteorol".
+│
+├── dashboard/
+│   ├── dashboard.py             # Painel Streamlit — versão pública
+│   ├── dashboard_tecnico_backup.py  # Painel técnico (5 abas, métricas)
+│   └── README_DASHBOARD.md
+│
+├── reproduz_artigo/             # Scripts das tabelas, figuras, ablação e STGCN
+│   ├── caminhos.py              #   raiz/artifacts/figs em um lugar só
+│   └── LEIA-ME.md               #   LEIA ANTES DE RODAR (ver aviso sobre X_test.pkl)
+│
+├── relatorio-it/                # Relatório final PIBITI (a entrega)
+│   ├── relatorio-final-IT.tex   #   fonte, 20 páginas
+│   ├── relatorio-final-IT.pdf
+│   ├── figs/                    #   figuras do relatório
+│   ├── overleaf/                #   pacote autocontido p/ editar online
+│   ├── relatorio-final-IT-overleaf.zip   # upload direto no Overleaf
+│   ├── template/                #   template oficial (.docx) e plano de revisão
+│   └── extras/                  #   IEEEtran + .bib do artigo Latinoware (não
+│                                #     usados pelo relatório)
+│
+├── notebooks/
+│   ├── analise_exploratoria_0.1.ipynb
+│   └── historico/               # 19 versões anteriores do notebook + 001/002.graphml
+│
+├── figuras/
+│   ├── exploratoria/            # Histogramas, boxplots, heatmap (era exemplos/)
+│   ├── series_2024/             # Pluviosidade e temperatura por nó
+│   ├── diagnostico_chuva/       # Acumulado vs. incremento
+│   └── nos_cegos/               # Análises dos nós sem dados próprios
+│
+└── docs/
+    ├── DOCUMENTACAO_CODIGO_GNN.md/.pdf
+    ├── README_NOTEBOOK.md
+    ├── ROTEIRO_APRESENTACAO.md
+    ├── apresentacoes/           # Slides do projeto (+ slides/ com os .md/.pdf)
+    ├── institucional/           # Cartas e solicitações de dados (CGE, IAG, INMET)
+    └── relatorio-parcial/       # Relatório IT 2 e sua submissão
 ```
+
+> **Atenção ao rodar os scripts de reprodução:** o `artifacts/X_test.pkl` do
+> repositório foi regenerado e **não** reproduz exatamente os números
+> publicados. `reproduz_artigo/LEIA-ME.md` explica o que diverge e quais
+> scripts não devem ser executados.
 
 ---
 
