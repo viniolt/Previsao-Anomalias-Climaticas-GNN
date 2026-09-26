@@ -87,7 +87,8 @@ def carregar(path):
             if not cand:
                 continue
             df = df.rename(columns={cand[0]: "DATA"})
-        df["DATA"] = pd.to_datetime(df["DATA"], errors="coerce", format="mixed", dayfirst=True)
+        # datas ISO: format="mixed" + dayfirst=True troca dia/mes no pandas 3
+        df["DATA"] = pd.to_datetime(df["DATA"], errors="coerce", format="ISO8601")
         df = df.dropna(subset=["DATA"]).set_index("DATA").sort_index()
         df = df[~df.index.duplicated(keep="first")]
         for col in df.columns:

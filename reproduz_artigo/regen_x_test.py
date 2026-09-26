@@ -81,8 +81,8 @@ def carregar_estacoes_sem_agregar(path):
             df = df.rename(columns={possiveis[0]: "DATA"})
         if "Unnamed: 2" in df.columns:
             raise ValueError(f"Cabecalho CGE quebrado em {os.path.basename(arq)}")
-        df["DATA"] = pd.to_datetime(df["DATA"], errors="coerce", format="mixed",
-                                    dayfirst=True)
+        # datas ISO: format="mixed" + dayfirst=True troca dia/mes no pandas 3
+        df["DATA"] = pd.to_datetime(df["DATA"], errors="coerce", format="ISO8601")
         df = df.dropna(subset=["DATA"]).set_index("DATA").sort_index()
         df = df[~df.index.duplicated(keep="first")]
         for col in df.columns:
