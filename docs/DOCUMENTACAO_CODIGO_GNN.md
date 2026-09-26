@@ -206,9 +206,9 @@ df = pd.read_csv(io.StringIO(conteudo_csv), sep=sep, engine="python",
 - `on_bad_lines="skip"` — pula linhas malformadas em vez de quebrar.
 
 ```python
-df["DATA"] = pd.to_datetime(df["DATA"], errors="coerce", format="mixed", dayfirst=True)
+df["DATA"] = pd.to_datetime(df["DATA"], errors="coerce", format="ISO8601")
 ```
-**`pd.to_datetime`** converte texto em timestamps. `format="mixed"` aceita múltiplos formatos de data na mesma coluna; `dayfirst=True` interpreta `dd/mm/aaaa` (padrão brasileiro); `errors="coerce"` transforma datas inválidas em `NaT` (Not-a-Time), que depois são removidas com `dropna`.
+**`pd.to_datetime`** converte texto em timestamps. Os CSVs do CGE usam datas ISO (`AAAA-MM-DD HH:MM:SS`), e `format="ISO8601"` lê exatamente esse padrão; `errors="coerce"` transforma datas inválidas em `NaT` (Not-a-Time), que depois são removidas com `dropna`. A versão anterior usava `format="mixed", dayfirst=True`, que no pandas 3 troca dia e mês quando o dia é ≤ 12 (ver `reproduz_artigo/LEIA-ME.md`); `reproduz_artigo/verifica_datas.py` confere a leitura.
 
 ```python
 df = df.dropna(subset=["DATA"]).set_index("DATA").sort_index()
@@ -748,7 +748,7 @@ Funções Streamlit-chave: `st.sidebar.slider` (escolhe o timestep "atual"), `st
 | Função | O que faz |
 |--------|-----------|
 | `pd.read_csv` (engine="python", on_bad_lines) | Leitura tolerante de CSV sujo |
-| `pd.to_datetime` (format="mixed", dayfirst) | Parse robusto de datas mistas |
+| `pd.to_datetime` (format="ISO8601") | Leitura das datas ISO dos CSVs |
 | `pivot_table` | Long → wide com MultiIndex `(feature, nó)` |
 | `MultiIndex.from_product`, `reindex` | Garante todas as combinações feature×nó |
 | `interpolate(method="time")` | Preenche faltantes pelo tempo |
