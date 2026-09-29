@@ -9,6 +9,7 @@ from matplotlib.lines import Line2D
 
 import os
 from caminhos import ARTIFACTS as ART, FIGS as OUT
+_HERE = os.path.dirname(os.path.abspath(__file__))
 os.makedirs(OUT, exist_ok=True)
 
 d = pickle.load(open(os.path.join(ART, "X_test.pkl"), "rb"))
