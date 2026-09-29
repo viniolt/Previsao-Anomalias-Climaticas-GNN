@@ -1,0 +1,12 @@
+Mascaramento artificial: 32 estacoes observadas escondidas, 8784 instantes (1/h) de 2024.
+
+MAE medio sobre as 32 estacoes-caso (media +- desvio entre estacoes):
+    Variavel               FP               MV              IDW
+         PLU    0.904+-0.220    0.910+-0.206    0.887+-0.222
+        Temp    1.121+-0.717    1.132+-0.705    1.104+-0.714
+   Umid.Rel.    6.048+-2.481    5.904+-2.418    5.946+-2.501
+      Vel.VT    0.714+-0.226    0.695+-0.218    0.698+-0.215
+
+Interpretacao: se FP ~ MV ~ IDW, os metodos sao equivalentes quando o no
+tem varios vizinhos-ancora; o FP nao demonstra superioridade de acuracia,
+mas integra-se ao mesmo grafo e opera com nos sem ancora imediata.

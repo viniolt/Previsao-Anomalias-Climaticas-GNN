@@ -1,0 +1,37 @@
+ no                          estacao  PLU MAE  PLU RMSE  Temp MAE  Temp RMSE
+  0              Santana do Parnaiba     0.47      3.03      1.09       1.55
+  1                         Pirituba     0.39      2.30      0.80       1.19
+  2                   Freguesia do Ó     0.38      2.31      0.92       1.38
+  3               Santana / Tucuruvi     0.37      2.30      0.80       1.19
+  4           Vila Maria / Guilherme     0.46      3.13      0.89       1.30
+  5                            Penha     0.47      3.26      0.83       1.16
+  6               S. Miguel Paulista     0.42      2.55      0.84       1.23
+  7                   Itaim Paulista     0.39      2.35      0.82       1.17
+  8                         Itaquera     0.42      2.52      0.91       1.26
+  9                       São Mateus     0.23      1.25      0.51       0.75
+ 10            Mauá - Paço Municipal     0.40      2.45      0.85       1.19
+ 11                    Riacho Grande     0.43      2.56      0.76       1.09
+ 12             Marsilac - Palheiros     0.42      2.48      0.97       1.52
+ 13                Capela do Socorro     0.38      2.36      1.03       1.54
+ 14 Capela do Socorro - Subprefeitur     0.41      2.66      0.77       1.10
+ 15                      M Boi Mirim     0.37      2.02      0.76       1.11
+ 16                      Campo Limpo     0.36      1.95      0.73       1.05
+ 17                             Lapa     0.38      2.48      0.73       1.04
+ 18                        Pinheiros     0.43      2.65      0.93       1.32
+ 19                         Sé - CGE     0.47      3.30      0.74       1.10
+ 20                            Móoca     0.35      2.25      0.78       1.15
+ 21                     Vila Formosa     0.32      1.75      0.83       1.17
+ 22                    Vila Prudente     0.29      1.56      0.82       1.16
+ 23                     Vila Mariana     0.46      2.77      0.90       1.37
+ 24                         Ipiranga     0.43      2.53      0.74       1.05
+ 25                        Jabaquara     0.45      2.72      0.81       1.16
+ 27                            Perus     0.41      2.46      1.01       1.35
+ 28               Barragem Palheiros     0.48      3.22      0.89       1.29
+ 29                    Cidade Ademar     0.40      2.33      0.81       1.19
+ 30                          Butantã     0.40      2.41      0.91       1.31
+ 31                      Santo Amaro     0.45      2.75      0.59       0.90
+ 32                         Tremembé     0.29      2.10      0.64       0.93
+
+Temp: RMSE por estacao min 0.75 | mediana 1.18 | max 1.55
+
+PLU: RMSE por estacao min 1.25 | mediana 2.47 | max 3.30

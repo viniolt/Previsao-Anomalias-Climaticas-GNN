@@ -1,0 +1,5 @@
+MAE do INCREMENTO de chuva em 60 min por regime (32 estacoes obs, 2024):
+                regime   fracao  chuva media  GraphSAGE  persist.
+        seco (<0,2 mm)    93.3%        -0.15       0.30      0.15
+  moderado (0,2-10 mm)     6.4%         1.40       1.10      1.40
+       forte (>=10 mm)     0.3%        18.30      17.48     18.30

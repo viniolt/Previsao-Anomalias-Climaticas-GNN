@@ -1,0 +1,42 @@
+  no  0 ok
+  no  1 ok
+  no  2 ok
+  no  3 ok
+  no  4 ok
+  no  5 ok
+  no  6 ok
+  no  7 ok
+  no  8 ok
+  no  9 ok
+  no 10 ok
+  no 11 ok
+  no 12 ok
+  no 13 ok
+  no 14 ok
+  no 15 ok
+  no 16 ok
+  no 17 ok
+  no 18 ok
+  no 19 ok
+  no 20 ok
+  no 21 ok
+  no 22 ok
+  no 23 ok
+  no 24 ok
+  no 25 ok
+  no 27 ok
+  no 28 ok
+  no 29 ok
+  no 30 ok
+  no 31 ok
+  no 32 ok
+
+Mascaramento com krigagem/linear: 32 estacoes, 2196 instantes (subamostra).
+MAE medio sobre as estacoes-caso (menor = melhor):
+    Variavel       FP       MV      IDW     Krig   Linear
+         PLU    0.863    0.869    0.847    1.475    0.965
+        Temp    1.115    1.127    1.098    1.225    1.135
+   Umid.Rel.    6.123    5.983    6.019    6.470    6.608
+      Vel.VT    0.717    0.698    0.701    0.655    0.774
+
+salvo: artifacts/fp_mascaramento_krig.json

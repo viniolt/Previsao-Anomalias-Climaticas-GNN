@@ -1,0 +1,24 @@
+eventos: 80 de 366 dias
+
+=== 1. Curva precisao-revocacao + F1 + especificidade (modelo com GraphSAGE) ===
+ percentil   recall  precisao      F1   espec.  dias sinal.
+        90   100.0%     21.9%   0.359     0.0%          366
+        95   100.0%     21.9%   0.359     0.0%          366
+      97.5   100.0%     21.9%   0.359     0.0%          366
+        99   100.0%     21.9%   0.359     0.0%          366
+      99.5   100.0%     22.2%   0.364     2.1%          360
+      99.9    87.5%     33.8%   0.488    52.1%          207
+
+=== 2. Detector climatologico SEM GraphSAGE (persistencia + Mahalanobis) ===
+ percentil   recall  precisao      F1   espec.
+        99   100.0%     21.9%   0.359     0.0%
+      99.9    87.5%     34.0%   0.490    52.4%
+  (comparar com o modelo acima: se igual, o GraphSAGE nao agrega a deteccao)
+
+=== 3. Bootstrap IC95% da revocacao/precisao no p99 (modelo) ===
+  recall  p99: 100.0%  IC95 [100.0, 100.0]
+  precis. p99: 21.8%  IC95 [17.8, 26.2]
+
+=== 4. Antecedencia da Regra 1 (alert_confirmado) vs inicio do evento ===
+  eventos com alerta da Regra 1 antes do inicio: 79/80
+  antecedencia mediana: 60 min | media: 72 min | max: 340 min

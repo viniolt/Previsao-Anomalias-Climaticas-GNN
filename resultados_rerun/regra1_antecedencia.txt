@@ -1,0 +1,15 @@
+
+=== Regra 1 [qualquer variavel] como antecipador de chuva forte (por estacao) ===
+  recall medio: 27%  (min 8, max 78)
+  falsas ativacoes: 21.97 por estacao/dia
+  lead time: mediana 120 min | media 108 min (minimo 60 = 1 horizonte)
+
+=== Regra 1 [so pluviosidade] como antecipador de chuva forte (por estacao) ===
+  recall medio: 12%  (min 0, max 36)
+  falsas ativacoes: 7.81 por estacao/dia
+  lead time: mediana 120 min | media 102 min (minimo 60 = 1 horizonte)
+
+Leitura: a Regra 1 e genuinamente antecipada (opera sobre a previsao), mas seu
+recall de chuva forte e limitado e o custo em falsas ativacoes por estacao/dia e alto,
+porque dispara em ~15% dos instantes. Confirma que o alerta antecipado por si so e fraco;
+a forca do sistema esta na deteccao retrospectiva (Regra 2), nao na antecipacao.

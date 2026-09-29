@@ -1,0 +1,14 @@
+
+=== Tabela III: no cego 33 vs medicoes reais do IAG-USP (diario, 2024) ===
+      Variavel Met.      MAE     RMSE      r
+  Precipitacao   FP     2.10     6.69   0.81
+  Precipitacao   MV     2.14     6.74   0.80
+   Temperatura   FP     2.47     4.17   0.73
+   Temperatura   MV     2.46     4.16   0.73
+    Umid. rel.   FP    15.57    17.19   0.87
+    Umid. rel.   MV    14.96    16.56   0.88
+
+Medias/totais anuais (contexto do texto):
+  temperatura: IAG 22.89 C | FP 20.84 C
+  precipitacao total: IAG 1641 mm | FP 1425 mm
+  13/01/2024: IAG 16.5 mm | FP 42.7 mm

@@ -1,0 +1,26 @@
+========================================================================
+TABELA III  (agregado sobre os 32 nos observados - convencao do artigo)
+========================================================================
+Modelo           PLU MAE  PLU RMSE  Temp MAE  Temp RMSE
+Media hist         2.917     6.767     3.634      4.631   <- nao usa grafo, inalterada
+Persistencia       0.286     2.484     0.811      1.273
+GraphSAGE          0.399     2.502     0.825      1.209
+
+artigo (valsplit): Persist 0,359/2,856 0,861/1,400 | modelo implantado 0,535/2,888 0,874/1,332
+
+correlacao Temp (previsto x observado): 0.9697   (artigo: 0,96)
+
+========================================================================
+TABELA V   (evento = algum posto > 10mm/60min no dia: 80 de 366 dias)
+========================================================================
+  Percentil 99   : recall = 100.0 %   precisao =  21.9 %
+  Percentil 99.9 : recall =  87.5 %   precisao =  33.8 %
+artigo (valsplit): p99 -> 100% / 26,6%  |  p99.9 -> 82,5% / 43,7%
+
+========================================================================
+ESTUDO DE CASO 13/01/2024
+========================================================================
+  as 00h50: 2 de 32 estacoes com score > p99   (artigo: 25 de 32)
+  maior score do dia: 44.3 no no 14 (Capela do Socorro - Subprefeitura)   (artigo: 43,0 em Capela do Socorro - Subprefeitura)
+  maior chuva real em 60 min: 43.5 mm no no 28 (Barragem Palheiros)   (artigo: 61,5 mm em Barragem Palheiros)
+  FP no no 33 em 13/01: acumulado do dia = 82.0 mm   (artigo: 82,6 mm estimado vs 16,5 real)
