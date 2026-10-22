@@ -14,7 +14,7 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.dirname(AQUI)
 
 ARTIFACTS = os.path.join(RAIZ, "artifacts")
-RELATORIO = os.path.join(RAIZ, "relatorio-it")
+RELATORIO = os.path.join(RAIZ, "academico", "IT-relatorio-final")
 FIGS = os.path.join(RELATORIO, "figs")
 
 

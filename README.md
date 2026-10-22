@@ -132,16 +132,6 @@ Acesse em: **http://localhost:8501**
 │   ├── caminhos.py              #   raiz/artifacts/figs em um lugar só
 │   └── LEIA-ME.md               #   LEIA ANTES DE RODAR (ver aviso sobre X_test.pkl)
 │
-├── relatorio-it/                # Relatório final PIBITI (a entrega)
-│   ├── relatorio-final-IT.tex   #   fonte, 20 páginas
-│   ├── relatorio-final-IT.pdf
-│   ├── figs/                    #   figuras do relatório
-│   ├── overleaf/                #   pacote autocontido p/ editar online
-│   ├── relatorio-final-IT-overleaf.zip   # upload direto no Overleaf
-│   ├── template/                #   template oficial (.docx) e plano de revisão
-│   └── extras/                  #   IEEEtran + .bib do artigo Latinoware (não
-│                                #     usados pelo relatório)
-│
 ├── notebooks/
 │   ├── analise_exploratoria_0.1.ipynb
 │   └── historico/               # 19 versões anteriores do notebook + 001/002.graphml
@@ -152,13 +142,23 @@ Acesse em: **http://localhost:8501**
 │   ├── diagnostico_chuva/       # Acumulado vs. incremento
 │   └── nos_cegos/               # Análises dos nós sem dados próprios
 │
-└── docs/
-    ├── DOCUMENTACAO_CODIGO_GNN.md/.pdf
-    ├── README_NOTEBOOK.md
-    ├── ROTEIRO_APRESENTACAO.md
-    ├── apresentacoes/           # Slides do projeto (+ slides/ com os .md/.pdf)
-    ├── institucional/           # Cartas e solicitações de dados (CGE, IAG, INMET)
-    └── relatorio-parcial/       # Relatório IT 2 e sua submissão
+├── resultados_rerun/            # Saídas em texto da reexecução dos scripts
+│
+├── docs/                        # Documentação técnica do projeto
+│   ├── DOCUMENTACAO_CODIGO_GNN.md/.pdf
+│   ├── README_NOTEBOOK.md
+│   └── ROTEIRO_APRESENTACAO.md
+│
+└── academico/                   # Produção acadêmica organizada por disciplina/entrega
+    ├── IT-relatorio-final/      # Relatório final PIBITI (LaTeX, Word, versões v1–vFinal)
+    ├── IT-paper-latinoware/     # Artigo Latinoware/LatinScience (versões, submissão, slides)
+    ├── IT-banner-pibiti/        # Banner de apresentação PIBITI Mackenzie
+    ├── IT-relatorio-parcial/    # Relatório parcial IT 2 e comprovantes de submissão
+    ├── IT-apresentacoes/        # Slides e apresentações do projeto IT
+    ├── IT-institucional/        # Ofícios e solicitações de dados (CGE, IAG, INMET)
+    ├── IT-autorizacao-publicacao/ # Termo de autorização de publicação
+    ├── MPC/                     # Metodologia de Pesquisa para Computação (Levantamento bibliográfico)
+    └── Lab-SWE/                 # Laboratório de Engenharia de Software (TG1 e apresentação ClimaSentinela)
 ```
 
 > **Atenção ao rodar os scripts de reprodução:** o `artifacts/X_test.pkl` do

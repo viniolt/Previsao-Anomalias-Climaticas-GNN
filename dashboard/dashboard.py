@@ -166,7 +166,7 @@ with tab_mapa:
         edge_lon += [lo, lob, None]
 
     fig = go.Figure()
-    fig.add_trace(go.Scattermapbox(
+    fig.add_trace(go.Scattermap(
         lat=edge_lat, lon=edge_lon, mode="lines",
         line=dict(width=0.5, color="lightgray"), hoverinfo="skip", showlegend=False,
     ))
@@ -174,15 +174,15 @@ with tab_mapa:
         sub = dfm[dfm["estado"] == estado]
         if sub.empty:
             continue
-        fig.add_trace(go.Scattermapbox(
+        fig.add_trace(go.Scattermap(
             lat=sub["lat"], lon=sub["lon"], mode="markers",
             marker=dict(size=12, color=cor),
             text=[f"<b>{nome_estacao(n)}</b><br>{h}" for n, h in zip(sub["no"], sub["hover"])],
             hoverinfo="text", name=estado,
         ))
     fig.update_layout(
-        mapbox_style="carto-positron", mapbox_zoom=9,
-        mapbox_center={"lat": dfm["lat"].mean(), "lon": dfm["lon"].mean()},
+        map_style="open-street-map", map_zoom=9,
+        map_center={"lat": dfm["lat"].mean(), "lon": dfm["lon"].mean()},
         height=600, margin=dict(l=0, r=0, t=0, b=0),
     )
     st.plotly_chart(fig, use_container_width=True)

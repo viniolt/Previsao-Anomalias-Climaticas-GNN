@@ -86,10 +86,22 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# Office temporary lock files
+~$*
+
 # Project-specific exclusions
 .claude/
 alguns artigos/
 referencias/
+
+# Dados meteorologicos grandes (apenas 2023 e 2024 sao versionados; 2016-2022 estao nas Releases do GitHub)
+estacoes_meteorologicas/meteorologicas_2016/
+estacoes_meteorologicas/meteorologicas_2017/
+estacoes_meteorologicas/meteorologicas_2018/
+estacoes_meteorologicas/meteorologicas_2019/
+estacoes_meteorologicas/meteorologicas_2020/
+estacoes_meteorologicas/meteorologicas_2021/
+estacoes_meteorologicas/meteorologicas_2022/
 
 # Artefatos: os tensores grandes (>100 MB) sao gerados pelo notebook;
 # versionamos apenas os pequenos (modelos, grafo, limiares, resultados).
@@ -101,7 +113,7 @@ artifacts/*
 !artifacts/model_plu.pt
 !artifacts/model_temp.pt
 
-# LaTeX build (relatorio-it/ e qualquer outra pasta de LaTeX)
+# LaTeX build (qualquer pasta de LaTeX)
 *.aux
 *.log
 *.out
@@ -114,6 +126,6 @@ artifacts/*
 *.lot
 .auctex-auto/
 
-# O pacote do Overleaf e uma copia derivada de relatorio-it/: o .zip e
-# regeravel, entao nao vai para o historico.
-relatorio-it/relatorio-final-IT-overleaf.zip
+# Os .zip dentro das pastas academicas sao copias compactadas
+# do conteudo ja extraido (tex/pdf/docx) versionado nessas mesmas pastas.
+academico/**/*.zip
