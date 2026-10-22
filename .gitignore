@@ -126,6 +126,11 @@ artifacts/*
 *.lot
 .auctex-auto/
 
-# Os .zip dentro das pastas academicas sao copias compactadas
-# do conteudo ja extraido (tex/pdf/docx) versionado nessas mesmas pastas.
-academico/**/*.zip
+# Conteudo academico: contem documentos com informacoes pessoais (relatorios,
+# oficios, termos, trabalhos de disciplina). Fica apenas na maquina local.
+# Unica excecao publica: o PDF final do artigo do Latinoware.
+academico/**
+!academico/
+!academico/IT-paper-latinoware/
+!academico/IT-paper-latinoware/Submissao_Final/
+!academico/IT-paper-latinoware/Submissao_Final/artigo_final.pdf
